@@ -18,3 +18,11 @@ and insert stats inside */
 USE parts;
 CREATE TABLE project(j_id VARCHAR(50),jname VARCHAR(50),city VARCHAR(50));
 INSERT INTO project(j_id,jname,city) VALUES ('j1','sorter','paris'),('j2','display','rome'),('j3','ocr','athens'),('j4','console','athens'),('j5','raid','london'),('j6','eds','oslo'),('j7','tape','london');
+/*I create third table called supplier using parts 
+database, which holds 4 columns and 5 rows*/
+USE parts;
+CREATE TABLE supplier(s_id VARCHAR(50),sname VARCHAR(50), `status` INT, city VARCHAR(50));
+/*I realize status is a keyword and reserved 
+word, so I backtick status to be used as an identifier
+Next, I add the stats for supplier table*/
+INSERT INTO supplier(s_id,sname,`status`,city) VALUES ('s1','smith',20,'london'),('s2','jones',10,'paris'),('s3','blake',30,'paris'),('s4','clark',20,'london'),('s5','adams',30,'athens');
