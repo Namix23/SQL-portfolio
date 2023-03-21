@@ -26,3 +26,8 @@ CREATE TABLE supplier(s_id VARCHAR(50),sname VARCHAR(50), `status` INT, city VAR
 word, so I backtick status to be used as an identifier
 Next, I add the stats for supplier table*/
 INSERT INTO supplier(s_id,sname,`status`,city) VALUES ('s1','smith',20,'london'),('s2','jones',10,'paris'),('s3','blake',30,'paris'),('s4','clark',20,'london'),('s5','adams',30,'athens');
+/*Using parts database, I create the last table called supply
+and insert a heavy dataset*/
+USE parts;
+CREATE TABLE supply(s_id VARCHAR(50),p_id VARCHAR (50),j_id VARCHAR(50),quantity INT);
+INSERT INTO supply(s_id,p_id,j_id,quantity) VALUES ('s1','p1','j1',200),('s1','p1','j4',700),('s2','p3','j1',400),('s2','p3','j2',200),('s2','p3','j3',200),('s2','p3','j4',500),('s2','p3','j5',600),('s2','p3','j6',400),('s2','p3','j7',800),('s2','p5','j2',100),('s3','p3','j1',200),('s3','p4','j2',500),('s4','p6','j3',300),('s4','p6','j7',300),('s5','p2','j2',200),('s5','p2','j4',100),('s5','p5','j5',500),('s5','p5','j7',100),('s5','p6','j2',200),('s5','p1','j4',100),('s5','p3','j4',200),('s5','p4','j4',800),('s5','p5','j4',400),('s5','p6','j4',500);
