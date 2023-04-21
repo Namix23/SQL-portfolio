@@ -23,3 +23,5 @@ UPDATE groceries
 SET aisle= 4 WHERE id= 6;
 --Check to see if all the data is shown under aisle column
 SELECT aisle FROM groceries;
+--Aim to have aisle listed by order instead of having mix of low/high numbers
+SELECT * FROM groceries ORDER BY aisle;
